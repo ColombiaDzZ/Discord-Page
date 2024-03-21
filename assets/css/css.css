@@ -1,0 +1,309 @@
+@import url(/Discord-Page/assets/css/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+header {
+    max-width: 100%;
+    background-image: url(/Discord-Page/assets/images/bg.png);
+    background-position-x: -790px;
+    background-repeat: no-repeat;
+    background-size: auto 685px;
+    display: flex;
+    flex-direction: column;  
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 2rem;
+    max-width: 278px;
+    padding: 70px 126px 24px 24px;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 370px;
+    margin: auto;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    line-height: 22px;
+    padding: 0 23px 24px 24px;
+    font-weight: 400;
+}
+
+#botoes {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.botao-1 {
+    width: 381px;
+    height: 54px;
+    border-radius:30px;
+    border-color: transparent;
+    transition: ease-in-out 0.3s;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao-2 {
+    width: 381px;
+    height: 54px;
+    border-radius:30px;
+    border-color: transparent;
+    color: #fff;
+    background-color: #23272A;
+    transition: ease-in-out 0.3s;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.botao-1:hover {
+    cursor: pointer;
+    color: #5865f2;
+    transition: ease-in-out 0.5s;
+}
+
+.botao-2:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #313338;
+    transition: ease-in-out 0.5s;
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 507px;
+}
+
+.p-section {
+    color: black;
+    font-family: "Open Sans", sans-serif;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.tec {
+    white-space: nowrap;
+}
+
+.textos h2 {
+    color:#23272a;
+}
+
+.imagem {
+    width: 379px;
+    height: 252px;
+    margin: auto;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+#section-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 507px;
+    background-color:#F6F6F6;
+}
+
+#section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 507px;
+}
+
+#section-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    height: 560px;
+    background-color: #F6F6F6;
+}
+
+#section-4 h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#section-4 .textos {
+    padding-top: 40px;
+}
+
+#section-4 .imagem {
+    padding-bottom: 40px;
+}
+
+footer {
+    height: 140px;
+    background-color: #23272A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+@media screen and (min-width: 688px) and (max-width: 823px) {
+    header {
+        background-position: initial;
+    }
+} 
+
+@media screen and (min-width: 824px) {
+    header{
+        background-position: initial;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    h1 {
+        max-width: 350px;
+        font-size: 3.1rem;
+        text-align: center;
+        line-height: 3.1rem;
+        padding-top: 94px;
+    }
+
+    p {
+        width: 700px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    #botoes {
+        flex-direction: row;
+        padding-bottom: 95px;
+    }
+
+    #section-1 {
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagem {
+        width: 607px;
+        height: 394px;
+        margin: 0;
+    }
+
+    .textos {
+        width: 348px;
+        margin: 0;
+        gap: 16px;
+    }
+
+    .textos h2 {
+        width: 329px;
+        height: 270px;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 54px;
+        margin: 0;
+        padding-left: 16px;
+    }
+
+    .p-section {
+        width: 348px;
+        text-align: left;
+        padding-left: 16px;
+    }
+
+    #section-2 {
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    #section-2 .textos {
+        height: 212px;
+    }
+    
+    #section-3 {
+        flex-direction: row;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #section-3 .textos {
+        height: 234px;
+    }
+
+    #section-4 {
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        height: 744px;
+        gap: 16px;
+    }
+
+    #section-4 .imagem {
+        width: 784px;
+        height: 508px;
+        padding: 0;
+    }
+
+    #section-4 .textos {
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    #section-4 .textos h2 {
+        width: 608px;
+        height: 80px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #section-4 .textos .p-section {
+        width: 802px;
+        height: 44px;
+        padding: 0;
+        text-align: center;
+    }
+}
